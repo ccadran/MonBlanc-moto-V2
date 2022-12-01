@@ -157,3 +157,47 @@ header {
         }
     }
 }
+@media screen and (min-width: 2000px) {
+    .toggle-btn {
+        display: none;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    #nav {
+        display: flex;
+        justify-content: flex-end;
+        transform: translateY(30%);
+        ul {
+            display: flex;
+            li {
+                margin-right: 250px;
+                font-family: $durkwide;
+                font-size: 34px;
+            }
+        }
+    }
+    .hero-container {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .hero-txt {
+            margin-left: 20px;
+            h4 {
+                font-size: 34px;
+                text-align: left;
+            }
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+}

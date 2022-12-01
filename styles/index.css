@@ -195,6 +195,51 @@ header .nav-bar {
     text-align: left;
   }
 }
+@media screen and (min-width: 2000px) {
+  .toggle-btn {
+    display: none;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  #nav {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(30%);
+  }
+  #nav ul {
+    display: flex;
+  }
+  #nav ul li {
+    margin-right: 250px;
+    font-family: durkwide-medium, sans-serif;
+    font-size: 34px;
+  }
+  .hero-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
+  .hero-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .hero-container .hero-txt {
+    margin-left: 20px;
+  }
+  .hero-container .hero-txt h4 {
+    font-size: 34px;
+    text-align: left;
+  }
+  .hero-container .hero-txt p {
+    font-size: 24px;
+  }
+}
 .section1 {
   display: flex;
   flex-direction: column;
@@ -369,4 +414,66 @@ p {
     font-size: 24px;
     line-height: 220%;
   }
+}
+@media screen and (min-width: 2000px) {
+  .section1 {
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: 72% 28%;
+  }
+  .section1 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 50px;
+  }
+  .section1 .details {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .section1 .details .characteristic h4 {
+    font-size: 34px;
+  }
+  .section1 .details .characteristic .characteristic-principal h5 {
+    font-size: 22px;
+  }
+  .section1 .details .characteristic .characteristic-principal h3 {
+    font-size: 40px;
+  }
+  .section1 .details .characteristic .characteristic-principal p {
+    font-size: 22px;
+  }
+}
+.slider {
+  justify-content: space-around;
+  margin-bottom: 50px;
+  width: 75%;
+  margin: 50px auto;
+}
+.slider p {
+  font-size: 36px;
+}
+.slider .slide-bar .background-slide {
+  width: 500px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.buy-container .like {
+  height: 100px;
+  width: 100px;
+}
+.buy-container .like i {
+  font-size: 3rem;
+}
+.buy-container .cart {
+  width: 380px;
+  height: 100px;
+}
+.buy-container .cart p {
+  font-size: 24px;
+  line-height: 220%;
 }/*# sourceMappingURL=index.css.map */
