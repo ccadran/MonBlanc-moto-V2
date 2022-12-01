@@ -1,0 +1,136 @@
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    .details {
+        margin: 40px 20px;
+        overflow-x: auto;
+        // width: 390px;
+        display: flex;
+        white-space: nowrap;
+        .characteristic {
+            margin-top: 40px;
+            display: flex;
+            text-transform: uppercase;
+            align-items: center;
+            margin-right: 40px;
+            h4 {
+                text-align: center;
+                writing-mode: vertical-rl;
+                margin-right: 20px;
+                transform: rotate(180deg);
+                color: grey;
+                font-family: $montserrat1;
+                font-size: 18px;
+            }
+            .characteristic-principal {
+                h5 {
+                    font-family: $montserrat1;
+                    font-size: 12px;
+                }
+                h3 {
+                    margin: 10px 0;
+                    font-family: $durkwide;
+                    font-size: 32px;
+                }
+                p {
+                    font-family: $montserrat1;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .slider {
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-family: $durkwide;
+            font-size: 22px;
+            white-space: nowrap;
+            line-height: 5px;
+        }
+        .slide-bar {
+            .background-slide {
+                margin: 0 15px;
+                background: $white;
+                width: 200px;
+                height: 2px;
+                position: relative;
+                &::after {
+                    content: "";
+                    height: 3px;
+                    width: 70%;
+                    background: #a75b12;
+                    position: absolute;
+                }
+            }
+        }
+    }
+    p {
+        margin: 20px 20px;
+        font-family: $montserrat2;
+        font-size: 12px;
+        line-height: 200%;
+    }
+    .buy-container {
+        display: flex;
+        margin: 20px 20px 50px 20px;
+
+        justify-content: space-around;
+        .like {
+            height: 72px;
+            width: 72px;
+            display: flex;
+            background: linear-gradient($black, $black) padding-box,
+                linear-gradient(
+                        54deg,
+                        rgba(164, 84, 16, 1) 48%,
+                        rgba(251, 239, 183, 1) 100%
+                    )
+                    border-box;
+            border-radius: 32px 0 32px 0;
+            border: 1px solid transparent;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 10px;
+            i {
+                background-color: #f3ec78;
+                background-image: linear-gradient(
+                    54deg,
+                    rgba(164, 84, 16, 1) 48%,
+                    rgba(251, 239, 183, 1) 100%
+                );
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+            }
+        }
+        .cart {
+            height: 72px;
+            width: 280px;
+            border-radius: 32px 0 32px 0;
+            background: rgb(164, 84, 16);
+            background: linear-gradient(
+                54deg,
+                rgba(164, 84, 16, 1) 48%,
+                rgba(251, 239, 183, 1) 100%
+            );
+            align-items: center;
+
+            p {
+                font-family: $durkwide;
+                font-size: 18px;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 120%;
+            }
+        }
+    }
+}

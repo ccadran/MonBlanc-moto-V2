@@ -1,0 +1,105 @@
+// .logo-burger {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin: 20px 20px;
+//     margin-bottom: 30px;
+//     position: relative;
+header {
+    position: relative;
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .toggle-btn {
+        position: fixed;
+        top: 30px;
+        transition: 0.3s;
+
+        span {
+            height: 5px;
+            width: 30px;
+            background: white;
+            display: flex;
+            margin-top: 5px;
+            transition: 0.3s ease;
+        }
+    }
+    .nav-bar {
+        display: none;
+        transition: 0.3s;
+        transform: translateY(100%);
+    }
+}
+
+#nav.active {
+    transform: translateY(0);
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 0;
+    display: flex;
+
+    background: rgba(0, 0, 0, 0.715);
+    align-items: center;
+    justify-content: center;
+    ul {
+        li {
+            margin-top: 25px;
+            font-family: $durkwide;
+            font-size: 22px;
+            color: white;
+        }
+    }
+}
+
+.logo-burger.active {
+    margin: 0;
+}
+.toggle-btn.active {
+    z-index: 5;
+    // left: 35px;
+    span {
+        background: white;
+        position: absolute;
+        right: 0;
+
+        &:nth-child(1) {
+            transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+            opacity: 0;
+        }
+        &:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    overflow: hidden;
+    .hero-txt {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin: 0 20px;
+        h4 {
+            font-size: 18px;
+            font-family: $durkwide;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            font-family: $montserrat2;
+            font-size: 12px;
+            line-height: 200%;
+        }
+    }
+}
