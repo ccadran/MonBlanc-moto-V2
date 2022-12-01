@@ -134,6 +134,7 @@ header .nav-bar {
   overflow-x: auto;
   display: flex;
   white-space: nowrap;
+  overflow-y: hidden;
 }
 .section1 .details .characteristic {
   margin-top: 40px;

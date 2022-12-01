@@ -15,13 +15,17 @@ btnBurger.addEventListener("click", () => {
         body.style = "overflow:scroll";
     }
 });
+function btnBurgerOnScroll() {
+    window.addEventListener("scroll", () => {
+        if (window.scrollY < lastScroll) {
+            btnBurger.style.top = "30px";
+        } else {
+            btnBurger.style.top = "-60px";
+        }
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY < lastScroll) {
-        btnBurger.style.top = "30px";
-    } else {
-        btnBurger.style.top = "-60px";
-    }
-
-    lastScroll = window.scrollY;
-});
+        lastScroll = window.scrollY;
+    });
+}
+if (window.scrollY > 60) {
+    btnBurgerOnScroll();
+}
