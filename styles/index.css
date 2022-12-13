@@ -72,7 +72,7 @@ header .nav-bar {
   height: 0;
   width: 0;
   display: flex;
-  background: rgba(0, 0, 0, 0.715);
+  background: rgba(0, 0, 0, 0.89);
   align-items: center;
   justify-content: center;
 }
@@ -120,6 +120,11 @@ header .nav-bar {
   top: 10%;
   -webkit-animation: logoCircle 10s linear infinite;
           animation: logoCircle 10s linear infinite;
+}
+@media screen and (min-width: 700px) {
+  .hero-container::before {
+    display: none;
+  }
 }
 .hero-container .hero-txt {
   display: flex;
