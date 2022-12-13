@@ -75,7 +75,7 @@ header .nav-bar {
   background: rgb(0, 0, 0);
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 200;
 }
 #nav.active ul li {
   margin-top: 25px;
