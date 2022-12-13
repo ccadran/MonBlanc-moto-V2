@@ -121,7 +121,7 @@ header .nav-bar {
   -webkit-animation: logoCircle 10s linear infinite;
           animation: logoCircle 10s linear infinite;
 }
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   .hero-container::before {
     display: none;
   }
