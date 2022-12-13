@@ -89,7 +89,7 @@ header .nav-bar {
 }
 
 .toggle-btn.active {
-  z-index: 5;
+  z-index: 205;
   left: 35px;
 }
 .toggle-btn.active span {
