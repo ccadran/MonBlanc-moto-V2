@@ -143,6 +143,12 @@ p {
             rgba(251, 239, 183, 1) 100%
         );
         align-items: center;
+        &:hover {
+            cursor: pointer;
+            p {
+                color: black;
+            }
+        }
 
         p {
             font-family: $durkwide;
@@ -151,10 +157,6 @@ p {
             text-align: center;
             line-height: 120%;
             transition: 0.3s;
-            &:hover {
-                color: black;
-                cursor: pointer;
-            }
         }
     }
 }

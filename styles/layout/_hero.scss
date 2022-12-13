@@ -83,6 +83,13 @@ header {
     flex-direction: column;
     margin-bottom: 30px;
     overflow: hidden;
+    &::before {
+        content: url(/assets/img/circle-logo.png);
+        position: absolute;
+        right: 35%;
+        top: 10%;
+        animation: logoCircle 10s linear infinite;
+    }
     .hero-txt {
         display: flex;
         justify-content: center;
@@ -160,6 +167,7 @@ header {
         margin-top: 200px;
         display: grid;
         grid-template-columns: 65% 35%;
+
         img {
             object-fit: cover;
             height: 100%;
@@ -215,5 +223,13 @@ header {
                 font-size: 24px;
             }
         }
+    }
+}
+@keyframes logoCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
