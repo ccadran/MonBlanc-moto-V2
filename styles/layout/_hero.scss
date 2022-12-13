@@ -122,26 +122,42 @@ header {
         display: none;
     }
     header {
+        transition: 0.3s;
+        z-index: 5;
+        margin-top: 0;
         display: flex;
         align-items: center;
         display: grid;
         grid-template-columns: 30% 70%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        background: black;
+        padding-bottom: 20px;
     }
     #nav {
         display: flex;
         justify-content: flex-end;
         transform: translateY(30%);
+
         ul {
             display: flex;
+            white-space: nowrap;
             li {
                 margin-right: 50px;
                 font-family: $durkwide;
                 font-size: 24px;
+                transition: 0.3s;
+                &:hover {
+                    cursor: pointer;
+                    color: grey;
+                }
             }
         }
     }
     .hero-container {
-        margin-top: 100px;
+        margin-top: 200px;
         display: grid;
         grid-template-columns: 65% 35%;
         img {
