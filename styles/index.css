@@ -437,6 +437,33 @@ p {
   transition: 0.3s;
 }
 
+.credits {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  margin: 10px auto;
+}
+@media screen and (max-width: 850px) {
+  .credits {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .credits {
+    width: 75%;
+  }
+}
+.credits p {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+.credits p span {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 1100px) {
   .section1 {
     margin-top: 150px;
