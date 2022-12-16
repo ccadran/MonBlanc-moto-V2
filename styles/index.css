@@ -442,10 +442,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 33%;
+  width: 25%;
   margin: 10px auto;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 880px) {
   .credits {
     width: 50%;
   }
@@ -458,6 +458,7 @@ p {
 .credits p {
   padding: 10px;
   text-align: center;
+  font-size: 12px;
   margin: 0;
 }
 .credits p span {
