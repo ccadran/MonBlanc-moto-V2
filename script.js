@@ -29,7 +29,7 @@ function btnBurgerOnScroll() {
         }
     });
 }
-if (innerWidth < 1100) {
+if (innerWidth < 1023) {
     btnBurgerOnScroll();
 }
 
@@ -49,7 +49,6 @@ if (innerWidth > 1100) {
             header.style.top = 0;
         } else {
             header.style.top = "-100px";
-            console.log("test");
         }
 
         lastScroll = window.scrollY;
